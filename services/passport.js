@@ -20,8 +20,7 @@ passport.use(
     {
       clientID: keys.googleClientID,
       clientSecret: keys.googleClientSecret,
-      callbackURL:
-        "https://fierce-dusk-31086.herokuapp.com/auth/google/callback",
+      callbackURL: "/auth/google/callback",
       proxy: true,
     },
     (accessToken, refreshToken, profile, done) => {
