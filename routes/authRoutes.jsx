@@ -17,10 +17,6 @@ module.exports = (app) => {
 
   // request is incoming result it outgoing
   app.get("/api/current_user", (request, result) => {
-    result.send(
-      <p>FUCK DA POLICE</p>,
-
-      request.user
-    );
+    result.send(request.user);
   });
 };
