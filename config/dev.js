@@ -9,4 +9,7 @@ module.exports = {
     "pk_test_51GqItVD3Ox1LV6sjHHTDDUf0Ep5VamC2ukYMlQV7cv8ciJ6svsnXPzSyuyBfAuGKidRUe4fh8vLgh37rRLspe6g000z3bRwAOS",
   stripeSecretKey:
     "sk_test_51GqItVD3Ox1LV6sjKjaKLtNQzrBA2P2UHwdvt5QCzRGNxaEDsLrmU6PhrE2F8iKgzaOG9Twy3kRwroXTfmnMkxmM00bQSdLWHi",
+  sendGridKey:
+    "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",
+  redirectDomain: "http://localhost:3000",
 };
