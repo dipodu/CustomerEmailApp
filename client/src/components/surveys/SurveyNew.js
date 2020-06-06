@@ -1,13 +1,27 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
+import SurveyFormReview from "./surveyFormReview";
 import SurveyForm from "./surveyForm";
 
 class SurveyNew extends Component {
-  render() {
+  state = { showFormReview: false };
+
+  renderContent() {
+    if (this.state.showFormReview) {
+      return (
+        <SurveyFormReview
+          onCancel={() => this.setState({ showFormReview: false })}
+        />
+      );
+    }
+
     return (
-      <div>
-        <SurveyForm />
-      </div>
+      <SurveyForm
+        onSurveySubmit={() => this.setState({ showFormReview: true })}
+      />
     );
+  }
+  render() {
+    return <div>{this.renderContent()}</div>;
   }
 }
 
